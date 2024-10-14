@@ -43,3 +43,6 @@ if (estudianteSeleccionado != null)
     double promedio = estudianteSeleccionado.CalcularPromedio();
     Console.WriteLine($"Promedio de {estudianteSeleccionado.Nombre}: {promedio:F2}");
 }
+
+// Agrega una función en el programa educativo que permita eliminar a un estudiante por su nombre
+programa.EliminarEstudiante("Pepe Villuela");
