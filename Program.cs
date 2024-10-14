@@ -61,3 +61,6 @@ if (estudianteSeleccionado != null)
 
 // modificar la calificación de una asignatura específica
 estudiante3.ModificarCalificacion(diseño, 5.5);
+
+// Agrega una función en el programa educativo que permita eliminar a un estudiante por su nombre
+programa.EliminarEstudiante("Pepe Villuela");
