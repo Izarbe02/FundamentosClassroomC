@@ -10,10 +10,15 @@ Asignatura diseño = new("Diseño", 8);
 // Crear estudiantes
 var estudiante1 = new Estudiante("Vanessa Llorente");
 Estudiante estudiante2 = new Estudiante("Alejandro Giménez");
+Estudiante estudiante3 = new Estudiante("Pepe Villuela");
+Estudiante estudiante4 = new Estudiante("Pedro Sánchez");
 
 // Añadir estudiantes al programa educativo
 programa.AñadirEstudiante(estudiante1);
 programa.AñadirEstudiante(estudiante2);
+programa.AñadirEstudiante(estudiante3);
+programa.AñadirEstudiante(estudiante4);
+
 
 // Asignar calificaciones
 estudiante1.AñadirCalificacion(servidor, 9.5);
@@ -22,6 +27,15 @@ estudiante1.AñadirCalificacion(diseño, 9.0);
 
 estudiante2.AñadirCalificacion(servidor, 7.5);
 estudiante2.AñadirCalificacion(cliente, 8.5);
+
+estudiante3.AñadirCalificacion(servidor, 7.5);
+estudiante3.AñadirCalificacion(cliente, 7.5);
+estudiante3.AñadirCalificacion(diseño, 9.5);
+
+estudiante4.AñadirCalificacion(servidor, 3.5);
+estudiante4.AñadirCalificacion(cliente, 9.5);
+estudiante4.AñadirCalificacion(diseño, 2.5);
+
 
 // Mostrar estudiantes
 programa.MostrarEstudiantes();
@@ -43,3 +57,7 @@ if (estudianteSeleccionado != null)
     double promedio = estudianteSeleccionado.CalcularPromedio();
     Console.WriteLine($"Promedio de {estudianteSeleccionado.Nombre}: {promedio:F2}");
 }
+
+
+// modificar la calificación de una asignatura específica
+estudiante3.ModificarCalificacion(diseño, 5.5);
