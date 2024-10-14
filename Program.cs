@@ -6,7 +6,7 @@ ProgramaEducativo programa = new ProgramaEducativo();
 Asignatura servidor = new Asignatura("Servidor", 6);
 var cliente = new Asignatura("Cliente", 4);
 Asignatura diseño = new("Diseño", 8);
-
+//prueba
 // Crear estudiantes
 var estudiante1 = new Estudiante("Vanessa Llorente");
 Estudiante estudiante2 = new Estudiante("Alejandro Giménez");
