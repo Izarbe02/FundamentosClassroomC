@@ -6,7 +6,7 @@ ProgramaEducativo programa = new ProgramaEducativo();
 Asignatura servidor = new Asignatura("Servidor", 6);
 var cliente = new Asignatura("Cliente", 4);
 Asignatura diseño = new("Diseño", 8);
-//prueba
+
 // Crear estudiantes
 var estudiante1 = new Estudiante("Vanessa Llorente");
 Estudiante estudiante2 = new Estudiante("Alejandro Giménez");
@@ -59,8 +59,14 @@ if (estudianteSeleccionado != null)
 }
 
 
-// modificar la calificación de una asignatura específica
+//1.  modificar la calificación de una asignatura específica
 estudiante3.ModificarCalificacion(diseño, 5.5);
 
-// Agrega una función en el programa educativo que permita eliminar a un estudiante por su nombre
+// 2. Agrega una función en el programa educativo que permita eliminar a un estudiante por su nombre
 programa.EliminarEstudiante("Pepe Villuela");
+
+
+//3.Implementa la funcionalidad de búsqueda de estudiantes por una parte de su nombre
+programa.BuscarEstudiantesPorNombre("Van");
+
+
