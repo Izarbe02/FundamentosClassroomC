@@ -10,11 +10,16 @@ class Estudiante
         Nombre = nombre;
         calificaciones = new Dictionary<Asignatura, double>();
     }
-
-    public void AñadirCalificacion(Asignatura asignatura, double calificacion)
-    {
+public void AñadirCalificacion(Asignatura asignatura, double calificacion)
+{
+    //Verificar si la calificacion está entre los valores 0 y 10.
+    if (calificacion >= 0 && calificacion <= 10){
         calificaciones[asignatura] = calificacion;
     }
+    else {
+        Console.WriteLine("La calificacion no es válida");
+    }
+}
 
     public void MostrarCalificaciones()
     {
