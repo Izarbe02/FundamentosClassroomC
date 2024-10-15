@@ -19,6 +19,10 @@ programa.AñadirEstudiante(estudiante2);
 programa.AñadirEstudiante(estudiante3);
 programa.AñadirEstudiante(estudiante4);
 
+// Añadir estudiantes al programa educativo
+programa.AñadirAsignatura(servidor);
+programa.AñadirAsignatura(diseño);
+programa.AñadirAsignatura(cliente);
 
 // Asignar calificaciones
 estudiante1.AñadirCalificacion(servidor, 9.5);
@@ -35,7 +39,6 @@ estudiante3.AñadirCalificacion(diseño, 9.5);
 estudiante4.AñadirCalificacion(servidor, 3.5);
 estudiante4.AñadirCalificacion(cliente, 9.5);
 estudiante4.AñadirCalificacion(diseño, 2.5);
-
 
 // Mostrar estudiantes
 programa.MostrarEstudiantes();
@@ -76,3 +79,8 @@ Console.WriteLine(Math.Truncate(programa.CalcularPromedioGlobal()));
 //5. Implementa una función que genere un reporte detallado para un estudiante,
 // mostrando todas sus calificaciones, el promedio final y las asignaturas en las que está inscrito.
 programa.GenerarReporteEstudiante(estudiante3);
+
+
+//6. Crea una función que permita añadir nuevas asignaturas a una lista global del programa educativo. 
+//Verifica que no se repitan asignaturas con el mismo nombre.
+programa.AñadirAsignatura(servidor);
