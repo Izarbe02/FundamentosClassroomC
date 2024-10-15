@@ -59,7 +59,7 @@ if (estudianteSeleccionado != null)
 }
 
 
-//1.  modificar la calificación de una asignatura específica
+//1. Modifica la calificación de una asignatura específica
 estudiante3.ModificarCalificacion(diseño, 5.5);
 
 // 2. Agrega una función en el programa educativo que permita eliminar a un estudiante por su nombre
@@ -68,5 +68,8 @@ programa.EliminarEstudiante("Pepe Villuela");
 
 //3.Implementa la funcionalidad de búsqueda de estudiantes por una parte de su nombre
 programa.BuscarEstudiantesPorNombre("Van");
+
+//Añade una funcionalidad que calcule el promedio global de todos los estudiantes del programa educativo.
+Console.WriteLine(Math.Truncate(programa.CalcularPromedioGlobal()));
 
 

@@ -79,9 +79,7 @@ class ProgramaEducativo
             sumaPromedios += estudiante.CalcularPromedio();
             contadorEstudiantes++;
         }
-
-
-        return contadorEstudiantes > 0 ? sumaPromedios / contadorEstudiantes : 0;
+        return contadorEstudiantes > 0 ? (sumaPromedios / contadorEstudiantes) : 0;
     }
 
     public void GenerarReporteEstudiante(Estudiante estudiante)
