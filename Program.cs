@@ -69,7 +69,10 @@ programa.EliminarEstudiante("Pepe Villuela");
 //3.Implementa la funcionalidad de búsqueda de estudiantes por una parte de su nombre
 programa.BuscarEstudiantesPorNombre("Van");
 
-//Añade una funcionalidad que calcule el promedio global de todos los estudiantes del programa educativo.
+//4. Añade una funcionalidad que calcule el promedio global de todos los estudiantes del programa educativo.
 Console.WriteLine(Math.Truncate(programa.CalcularPromedioGlobal()));
 
 
+//5. Implementa una función que genere un reporte detallado para un estudiante,
+// mostrando todas sus calificaciones, el promedio final y las asignaturas en las que está inscrito.
+programa.GenerarReporteEstudiante(estudiante3);
