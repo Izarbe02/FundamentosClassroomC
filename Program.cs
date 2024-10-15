@@ -80,9 +80,9 @@ programa.GenerarReporteEstudiante(estudiante3);
 //6.Crea una función que permita añadir nuevas asignaturas a una lista global del programa educativo.
 
 //7.Implementa la validación de las calificaciones antes de añadirlas. Solo deben aceptarse calificaciones entre 0 y 10.
-
+estudiante3.AñadirCalificacion(diseño, 18);
 //8. Crea una función que muestre el ranking de los estudiantes basado en sus promedios
 
 //9.Añade una funcionalidad que permita listar a todos los estudiantes que tienen un promedio menor a 5, indicando que están en riesgo de reprobar.
 
-//10.Implementa una función que permita visualizar todas las asignaturas disponibles en el programa educativo, junto con su cantidad de créditosg
+//10.Implementa una función que permita visualizar todas las asignaturas disponibles en el programa educativo, junto con su cantidad de créditos
